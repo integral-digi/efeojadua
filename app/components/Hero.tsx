@@ -19,7 +19,7 @@ const heroItems: HeroItemProps = {
 
 const Hero = () => {
     return (
-        <section className="w-full space-y-9">
+        <section className="w-full space-y-9 relative">
             <section className="w-36 h-36">
                 <img 
                     src={heroItems.photo} 
@@ -28,7 +28,7 @@ const Hero = () => {
                 />
             </section>
             <section className="space-y-6">
-                <span>
+                <span className="space-y-6">
                     <h1 className="text-6xl text-white font-black">
                         {heroItems.heading}
                     </h1>
@@ -48,6 +48,7 @@ const Hero = () => {
                     {heroItems.linkText}
                 </button>
             </section>
+            <section className="w-32 h-32 bg-lime-500 rounded-full absolute -bottom-24 right-0" />
         </section>
     )
 }

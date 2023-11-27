@@ -2,7 +2,7 @@ import Heading from "./Heading";
 
 const pageInfo = {
     title: "Portfolio",
-    subtitle: "Insights & Ideas shared based on my experiences",
+    subtitle: "Some of my recent projects",
     moreLink: "See all"
 };
 
@@ -15,7 +15,7 @@ const entries = [
 
 const Portfolio = () => {
     return (
-        <section className="w-full overflow-x-hidden space-y-6">
+        <section className="w-full space-y-6">
             <section className="flex justify-between items-end">
                 <Heading 
                     title={pageInfo.title} 
@@ -25,29 +25,36 @@ const Portfolio = () => {
                     {pageInfo.moreLink}
                 </p>
             </section>
-            <section className="overflow-x-scroll w-max flex items-center space-x-12">
+            <section className="overflow-x-scroll w-full flex items-center space-x-12 scrollbar-hide">
                 {entries.map((entry) => (
                     <section 
                         key={entry.id} 
-                        className="w-full h-[576px] flex items-center justify-center relative"
+                        className="flex items-center justify-center relative"
                     >
-                        <section className="absolute bottom-8 left-8 z-50">
-                            <section className="space-y-12">
-                                <section className="space-x-3 flex items-center">
-                                    {entry.tags.map((tag, index) => (
-                                        <section 
-                                            key={index} 
-                                            className="px-4 py-1 bg-white rounded-full flex items-center justify-center"
-                                        >
-                                            <p className="text-orange-950 text-base font-normal leading-loose">
-                                                {tag}
-                                            </p>
-                                        </section>
-                                    ))}
+                        <section className="w-[448px] h-[576px] ">
+                            <img 
+                                src={entry.photo} 
+                                alt={entry.name} 
+                                className="w-full h-full object-cover" 
+                            />
+                            <section className="absolute bottom-8 left-8 z-50">
+                                <section className="space-y-12">
+                                    <section className="space-x-3 flex items-center">
+                                        {entry.tags.map((tag, index) => (
+                                            <section 
+                                                key={index} 
+                                                className="px-4 py-1 bg-white rounded-full flex items-center justify-center"
+                                            >
+                                                <p className="text-orange-950 text-base font-normal leading-loose">
+                                                    {tag}
+                                                </p>
+                                            </section>
+                                        ))}
+                                    </section>
+                                    <p className="text-white text-4xl font-extrabold leading-10">
+                                        {entry.name}
+                                    </p>
                                 </section>
-                                <p className="text-white text-4xl font-extrabold leading-10">
-                                    {entry.name}
-                                </p>
                             </section>
                         </section>
                     </section>
