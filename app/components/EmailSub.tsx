@@ -14,7 +14,7 @@ const EmailSub = () => {
                 <section className="w-[60%] relative">
                     <input 
                         type="email" 
-                        className="h-12 bg-white rounded pl-4 w-full" 
+                        className="h-12 bg-white rounded pl-4 w-full text-zinc-900 font-medium" 
                         id={formElements.buttonText}
                         placeholder={formElements.placeholder}
                     />

@@ -1,6 +1,6 @@
 import EmailSub from "./EmailSub";
 
-const socials = [
+export const socials = [
     { id: 1, name: "x", href: "x.com/integral19", icon: "/assets/x.svg" },
     { id: 2, name: "facebook", href: "fb.com/ojadua.efe", icon: "/assets/facebook.svg" },
     { id: 3, name: "instagram", href: "instagram.com/oh_great", icon: "/assets/instagram.svg" },

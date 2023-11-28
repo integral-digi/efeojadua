@@ -1,5 +1,5 @@
 const aboutItems = {
-    info: "I'm a versatile Product Designer and Developer with over 7 years of experience. My journey began with a degree in accounting, but my passion led me to become a self-taught frontend developer. I'm a creative problem solver, and my skills span UI/UX design, frontend, and a little bit of dabbling in backend development with a toolkit that includes",
+    info: "I'm a versatile Product Designer and Developer with over 8 years of experience. My journey began with a degree in accounting, but my passion led me to become a self-taught frontend developer and designer. I'm a creative problem solver, and my skills span UI/UX design, frontend, and, backend development with a toolkit that includes",
 }
 
 const features = [
@@ -7,7 +7,7 @@ const features = [
     { icon: "/assets/js.svg", heading: "Javascript", subtitle: "8 years experience in crafting client-side interactions with the popular JS scripting language." },
     { icon: "/assets/react.svg", heading: "React Js / Native", subtitle: "4 years experience building some of the coolest frontends using React JS and React Native." },
     { icon: "/assets/python.svg", heading: "Python", subtitle: "2 years experience working with Python, and Python frameworks like Flask and Django." },
-    { icon: "/assets/redux.svg", heading: "Redux", subtitle: "4 years experience building some of the coolest frontends using Redux Toolkit." },
+    { icon: "/assets/redux.svg", heading: "Redux", subtitle: "4 years experience developing and, managing complex react js app states using Redux Toolkit." },
     { icon: "/assets/postgres.svg", heading: "PostgreSQL", subtitle: "4 years worth of valuable experience building reliable databases" },
 ]
 

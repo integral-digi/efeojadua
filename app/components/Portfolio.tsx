@@ -31,13 +31,14 @@ const Portfolio = () => {
                         key={entry.id} 
                         className="flex items-center justify-center relative"
                     >
-                        <section className="w-[448px] h-[576px] ">
+                        <section className="bg-amber-700 opacity-20 w-full h-full absolute top-0 left-0 hover:opacity-0" />
+                        <section className="w-[448px] h-[576px]">
                             <img 
                                 src={entry.photo} 
                                 alt={entry.name} 
                                 className="w-full h-full object-cover" 
                             />
-                            <section className="absolute bottom-8 left-8 z-50">
+                            <section className="absolute bottom-8 left-8 z-20">
                                 <section className="space-y-12">
                                     <section className="space-x-3 flex items-center">
                                         {entry.tags.map((tag, index) => (
