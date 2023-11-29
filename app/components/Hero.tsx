@@ -39,26 +39,53 @@ const Hero = () => {
                 </section>
                 <section className="space-y-6">
                     <span className="space-y-6">
-                        <h1 className="text-6xl text-white font-black">
+                        <motion.h1 
+                            className="text-6xl text-white font-black"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity:1 }}
+                            transition={{ duration: 0.1, delay: 0.2,  }}
+                        >
                             {heroItems.heading}
-                        </h1>
-                        <h1 className="text-6xl text-slate-400 font-black">
+                        </motion.h1>
+                        <motion.h1 
+                            className="text-6xl text-slate-400 font-black"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity:1 }}
+                            transition={{ duration: 1, delay: 1, ease: "linear" }}
+                        >
                             {heroItems.headingTwo}
-                        </h1>
+                        </motion.h1>
                     </span>
                     <p className="text-white text-2xl font-semibold">
                         {heroItems.subtitle}
                     </p>
                 </section>
                 <section className="flex items-center space-x-6">
-                    <button className="flex items-center justify-center px-16 py-2 bg-white rounded-full text-zinc-900 font-bold hover:bg-indigo-900 hover:text-white hover:ease-linear">
+                    <motion.button 
+                        className="hover:bg-indigo-700 hover:text-white flex items-center justify-center px-16 py-2 bg-white rounded-full text-zinc-900 font-bold"
+                        whileHover={{
+                            scale: 1.05,
+                            transition: { duration: 1 },
+                          }}
+                        whileTap={{ scale: 0.1 }}
+                    >
                         {heroItems.buttonText}
-                    </button>
+                    </motion.button>
                     <button className="flex items-center justify-center bg-transparent font-medium" onClick={() => router.push("/efe-ojadua-resume.pdf")}>
                         {heroItems.linkText}
                     </button>
                 </section>
-                <section className="w-32 h-32 bg-lime-500 rounded-full absolute -bottom-24 right-0" />
+                <motion.section className="w-32 h-32 bg-transparent absolute -bottom-24 right-0"
+                    initial={{ 'rotate': '0deg' }}
+                    animate={{ 'rotate': '360deg' }}
+                    transition={{ duration: 15, repeat: Infinity }}
+                >
+                    <img 
+                        src="/assets/work-badge.svg" 
+                        alt="work badge" 
+                        className="w-32 h-32" 
+                    />
+                </motion.section>
             </motion.div>
         </AnimatePresence>
     )

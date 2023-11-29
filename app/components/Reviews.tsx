@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 type ReviewProps = {
   id: number;
@@ -41,7 +42,13 @@ const Reviews = () => {
   };
 
   return (
-    <section className="flex items-center space-x-6 w-full">
+    <motion.section 
+      className="flex items-center space-x-6 w-full"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.5, duration: 3 }}
+      exit={{ opacity: 0 }}
+    >
       {reviewData.map((review) => (
         <section
           key={review.id}
@@ -77,7 +84,7 @@ const Reviews = () => {
           )}
         </section>
       ))}
-    </section>
+    </motion.section>
   );
 };
 

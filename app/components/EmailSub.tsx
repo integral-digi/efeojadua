@@ -20,7 +20,7 @@ const EmailSub = () => {
                     />
                     <button 
                         type="submit" 
-                        className="absolute top-1.5 right-4 flex items-center justify-center rounded-md bg-zinc-900 p-2"
+                        className="absolute top-1.5 right-2 flex items-center justify-center rounded-sm bg-zinc-900 p-2"
                     >
                         <p className="text-center text-white text-sm font-bold">
                             {formElements.buttonText}

@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import Heading from './Heading';
 import Link from 'next/link';
 
@@ -86,7 +87,13 @@ const Blog: React.FC = () => {
   }, []);
 
   return (
-    <section className="w-full">
+    <motion.section 
+      className="w-full"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.5, duration: 3 }}
+      exit={{ opacity: 0 }}
+    >
       <Heading title={blogData.title} subtitle={blogData.subtitle} />
 
       {articles.length ? (
@@ -116,7 +123,7 @@ const Blog: React.FC = () => {
           Insights on the way.
         </p>
       )}
-    </section>
+    </motion.section>
   );
 };
 

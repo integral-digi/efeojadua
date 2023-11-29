@@ -1,4 +1,6 @@
+"use client"
 import Heading from "./Heading";
+import { motion } from "framer-motion";
 
 const pageInfo = {
     title: "Portfolio",
@@ -15,7 +17,13 @@ const entries = [
 
 const Portfolio = () => {
     return (
-        <section className="w-full space-y-6">
+        <motion.section 
+            className="w-full space-y-6"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 3 }}
+            exit={{ opacity: 0 }}
+        >
             <section className="flex justify-between items-end">
                 <Heading 
                     title={pageInfo.title} 
@@ -27,9 +35,14 @@ const Portfolio = () => {
             </section>
             <section className="overflow-x-scroll w-full flex items-center space-x-12 scrollbar-hide">
                 {entries.map((entry) => (
-                    <section 
+                    <motion.section 
                         key={entry.id} 
                         className="flex items-center justify-center relative"
+                        whileHover={{
+                            scale: 1.05,
+                            transition: { duration: 1 },
+                          }}
+                        whileTap={{ scale: 0.2 }}
                     >
                         <section className="bg-amber-700 opacity-20 w-full h-full absolute top-0 left-0 hover:opacity-0" />
                         <section className="w-[448px] h-[576px]">
@@ -58,10 +71,10 @@ const Portfolio = () => {
                                 </section>
                             </section>
                         </section>
-                    </section>
+                    </motion.section>
                 ))}
             </section>
-        </section>
+        </motion.section>
     )
 }
 

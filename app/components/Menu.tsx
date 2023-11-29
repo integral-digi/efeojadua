@@ -1,8 +1,11 @@
 "use client"
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import MainNav, { navItems } from "./MainNav";
+import { motion } from "framer-motion";
 import { Popover } from "@headlessui/react";
 import { socials } from "./Footer";
+
 
 interface MenuItemsProps {
     name: string;
@@ -32,12 +35,16 @@ const Menu = () => {
                 </section>
                 <section className="space-y-8">
                     {menuItems.map((item, index) => (
-                        <p 
+                        <motion.p 
                             className="text-6xl text-white font-black cursor-pointer" 
                             key={index} onClick={()=>router.push(item.href)}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 3, delay: 0.5 }}
+                            exit={{ opacity: 0 }}
                         >
                             {item.name.toUpperCase()}
-                        </p>
+                        </motion.p>
                     ))}
                 </section>
                 <section className="flex items-center space-x-4">
@@ -46,11 +53,16 @@ const Menu = () => {
                             className={`w-12 h-12 rounded-lg flex items-center justify-center ${social.id === 2 ? "bg-indigo-500" : "bg-transparent"}`} 
                             key={social.id}
                         >
-                            <img 
-                                src={social.icon} 
-                                alt={social.name} 
-                                className="w-4 h-4" 
-                            />
+                            <Link 
+                                href={social.href} 
+                                passHref target="blank"
+                            >
+                                <img 
+                                    src={social.icon} 
+                                    alt={social.name} 
+                                    className="w-4 h-4" 
+                                />
+                            </Link>
                         </section>
                     ))}
                 </section>

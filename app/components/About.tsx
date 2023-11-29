@@ -1,3 +1,6 @@
+"use client"
+import { motion } from "framer-motion";
+
 const aboutItems = {
     info: "I'm a versatile Product Designer and Developer with over 8 years of experience. My journey began with a degree in accounting, but my passion led me to become a self-taught frontend developer and designer. I'm a creative problem solver, and my skills span UI/UX design, frontend, and, backend development with a toolkit that includes",
 }
@@ -13,7 +16,13 @@ const features = [
 
 const About = () => {
     return (
-        <section className="w-full space-y-12">
+        <motion.section 
+            className="w-full space-y-12"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 2 }}
+            exit={{ opacity: 0 }}
+        >
             <section className="space-y-6">
                 <section>
                     <span className="text-white text-6xl font-black">
@@ -24,14 +33,14 @@ const About = () => {
                     </span>
                 </section>
                 <section className="w-[84%]">
-                    <p className="text-white text-2xl font-bold">
+                    <p className="text-white text-2xl font-semibold">
                         {aboutItems.info}
                     </p>
                 </section>
             </section>
-            <section className="w-full flex items-center space-x-8 overflow-x-scroll scrollbar-hide">
+            <section className="w-full h-max flex items-center space-x-8 overflow-x-scroll scrollbar-hide">
                 {features.map((feature, index) => (
-                    <section className="w-fit h-[464px] space-y-8 bg-[#1A1A1A] rounded-2xl drop-shadow-xl px-5 pt-24 pb-4" key={index}>
+                    <section className="w-fit h-[464px] space-y-8 bg-[#1A1A1A] rounded-2xl drop-shadow-md px-5 pt-24 pb-4 hover:bg-zinc-900 hover:ease-in-out" key={index}>
                         <img 
                             src={feature.icon} 
                             alt={feature.heading} 
@@ -48,7 +57,7 @@ const About = () => {
                     </section>
                 ))}
             </section>
-        </section>
+        </motion.section>
     )
 }
 
