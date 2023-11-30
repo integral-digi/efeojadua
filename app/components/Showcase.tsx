@@ -34,7 +34,7 @@ const scElements = {
 const Showcase = () => {
     return (
         <motion.section 
-            className="w-full"
+            className="w-full lg:hidden"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 3 }}
@@ -42,7 +42,7 @@ const Showcase = () => {
         >
             <section className="space-y-16">
                 {/* <Heading title={scElements.title} subtitle={scElements.subtitle} /> */}
-                <section className="flex items-center justify-between flex-1">
+                <section className="flex items-center justify-between flex-1 lg:grid lg:grid-cols-4">
                     {logos.map((logo) => (
                         <section key={logo.id} className="w-auto h-12 bg-transparent">
                             <img src={logo.src} alt={logo.name} className={`w-auto ${logo.id === 1 ? "h-5" : "h-6"}`} />

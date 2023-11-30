@@ -25,15 +25,15 @@ const About = () => {
         >
             <section className="space-y-6">
                 <section>
-                    <span className="text-white text-6xl font-black">
+                    <span className="text-white text-6xl font-black lg:text-4xl">
                         About &nbsp;
                     </span>
-                    <span className="text-slate-400 text-6xl font-black">
+                    <span className="text-slate-400 text-6xl font-black lg:text-4xl">
                         me
                     </span>
                 </section>
-                <section className="w-[84%]">
-                    <p className="text-white text-xl font-semibold">
+                <section className="w-[84%] lg:w-full">
+                    <p className="text-white text-xl font-semibold leading-8 lg:text-base">
                         {aboutItems.info}
                     </p>
                 </section>

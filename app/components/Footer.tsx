@@ -36,7 +36,7 @@ const Footer = () => {
             exit={{ opacity: 0 }}
         >
             <EmailSub />
-            <h1 className="text-white text-center text-6xl font-bold leading-10">
+            <h1 className="text-white text-center text-6xl font-bold leading-10 lg:text-4xl">
                 hi@efeojadua.dev
             </h1>
             <section className="flex items-center space-x-4 justify-center">

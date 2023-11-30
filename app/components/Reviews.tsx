@@ -43,7 +43,7 @@ const Reviews = () => {
 
   return (
     <motion.section 
-      className="flex items-center space-x-6 w-full"
+      className="flex items-center space-x-6 w-full lg:block lg:space-y-6 lg:space-x-0"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 3 }}
@@ -52,7 +52,7 @@ const Reviews = () => {
       {reviewData.map((review) => (
         <section
           key={review.id}
-          className={`bg-neutral-900 bg-opacity-40 rounded-xl p-10 cursor-pointer space-y-9 shadow ${inView === review.id ? "" : "h-60"}`}
+          className={`bg-neutral-900 bg-opacity-40 rounded-xl p-10 cursor-pointer space-y-9 shadow ${inView === review.id ? "" : "h-60 lg:h-fit"}`}
           onClick={() => handleClick(review.id)}
         >
           <img

@@ -38,9 +38,9 @@ const Hero = () => {
                     />
                 </section>
                 <section className="space-y-6">
-                    <span className="space-y-6">
+                    <span className="space-y-6 lg:space-y-1">
                         <motion.h1 
-                            className="text-6xl text-white font-black"
+                            className="text-6xl text-white font-black lg:text-4xl"
                             initial={{ opacity: 0 }}
                             animate={{ opacity:1 }}
                             transition={{ duration: 0.1, delay: 0.2,  }}
@@ -48,7 +48,7 @@ const Hero = () => {
                             {heroItems.heading}
                         </motion.h1>
                         <motion.h1 
-                            className="text-6xl text-slate-400 font-black"
+                            className="text-6xl text-slate-400 font-black lg:text-4xl"
                             initial={{ opacity: 0 }}
                             animate={{ opacity:1 }}
                             transition={{ duration: 1, delay: 1, ease: "linear" }}
@@ -56,7 +56,7 @@ const Hero = () => {
                             {heroItems.headingTwo}
                         </motion.h1>
                     </span>
-                    <p className="text-white text-2xl font-semibold">
+                    <p className="text-white text-2xl font-semibold lg:text-lg">
                         {heroItems.subtitle}
                     </p>
                 </section>
@@ -68,6 +68,7 @@ const Hero = () => {
                             transition: { duration: 1 },
                           }}
                         whileTap={{ scale: 0.1 }}
+                        onClick={()=>router.replace("https://fiverr.com/eze_trust")}
                     >
                         {heroItems.buttonText}
                     </motion.button>
@@ -75,7 +76,7 @@ const Hero = () => {
                         {heroItems.linkText}
                     </button>
                 </section>
-                <motion.section className="w-32 h-32 bg-transparent absolute -bottom-24 right-0"
+                <motion.section className="w-32 h-32 bg-transparent absolute -bottom-24 right-0 lg:-bottom-36 lg:hidden"
                     initial={{ 'rotate': '0deg' }}
                     animate={{ 'rotate': '360deg' }}
                     transition={{ duration: 15, repeat: Infinity }}

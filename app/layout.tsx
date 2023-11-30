@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Nunito } from 'next/font/google'
+import { Nunito, Outfit, Plus_Jakarta_Sans, Urbanist } from 'next/font/google'
 import './globals.css'
 
-const nunito = Nunito({ subsets: ['latin'] })
+const jakarta = Outfit({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Product Dev and Designer',
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>{children}</body>
+      <body className={jakarta.className}>{children}</body>
     </html>
   )
 }

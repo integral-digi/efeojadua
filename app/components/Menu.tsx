@@ -23,8 +23,8 @@ const menuItems: MenuItemsProps[] = [
 const Menu = () => {
     const router = useRouter();
     return (
-        <section className="bg-zinc-900 w-full h-full z-50">
-            <section className="space-y-32 px-36 py-16">
+        <section className="bg-zinc-900 w-full h-full min-h-screen z-50">
+            <section className="space-y-32 px-36 py-16 lg:px-8 lg:space-y-24">
                 <section className="flex items-center justify-between">
                     <MainNav icon={null} />
                     <Popover.Button>
@@ -36,7 +36,7 @@ const Menu = () => {
                 <section className="space-y-8">
                     {menuItems.map((item, index) => (
                         <motion.p 
-                            className="text-6xl text-white font-black cursor-pointer" 
+                            className="text-6xl text-white font-black cursor-pointer lg:text-4xl" 
                             key={index} onClick={()=>router.push(item.href)}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -50,7 +50,7 @@ const Menu = () => {
                 <section className="flex items-center space-x-4">
                     {socials.map((social) => (
                         <section 
-                            className={`w-12 h-12 rounded-lg flex items-center justify-center ${social.id === 2 ? "bg-indigo-500" : "bg-transparent"}`} 
+                            className={`w-12 h-12 rounded-lg flex items-center justify-center ${social.name === "facebook" ? "bg-indigo-500" : "bg-transparent"}`} 
                             key={social.id}
                         >
                             <Link 
