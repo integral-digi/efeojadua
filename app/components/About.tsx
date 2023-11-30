@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 const aboutItems = {
-    info: "I'm a versatile Product Designer and Developer with over 8 years of experience. My journey began with a degree in accounting, but my passion led me to become a self-taught frontend developer and designer. I'm a creative problem solver, and my skills span UI/UX design, frontend, and, backend development with a toolkit that includes",
+    info: "Hey there! I'm a bit of a hybrid – a Product Designer and Developer rolled into one, with a solid 8 years on this wild ride. Would you believe my journey started with crunching numbers in accounting? But hey, passion's a powerful thing! It steered me towards becoming a self-taught frontend developer and designer extraordinaire. I thrive on untangling puzzles, finding creative solutions, and rocking it in UI/UX design, frontend, and backend development. My toolkit? Well, let's just say it's jam-packed with all the cool tech toys.",
 }
 
 const features = [
@@ -33,14 +33,17 @@ const About = () => {
                     </span>
                 </section>
                 <section className="w-[84%]">
-                    <p className="text-white text-2xl font-semibold">
+                    <p className="text-white text-xl font-semibold">
                         {aboutItems.info}
                     </p>
                 </section>
             </section>
             <section className="w-full h-max flex items-center space-x-8 overflow-x-scroll scrollbar-hide">
                 {features.map((feature, index) => (
-                    <section className="w-fit h-[464px] space-y-8 bg-[#1A1A1A] rounded-2xl drop-shadow-md px-5 pt-24 pb-4 hover:bg-zinc-900 hover:ease-in-out" key={index}>
+                    <section 
+                        className="w-fit h-[480px] space-y-8 bg-[#1A1A1A] rounded-2xl drop-shadow-md px-8 pt-24 pb-4 hover:bg-zinc-900/50" 
+                        key={index}
+                    >
                         <img 
                             src={feature.icon} 
                             alt={feature.heading} 
@@ -50,7 +53,7 @@ const About = () => {
                             <p className="text-white text-lg font-bold">
                                 {feature.heading}
                             </p>
-                            <p className="text-slate-100 text-xl font-normal leading-loose w-[275px]">
+                            <p className="text-slate-100 text-lg font-normal leading-loose w-[275px]">
                                 {feature.subtitle}
                             </p>
                         </section>

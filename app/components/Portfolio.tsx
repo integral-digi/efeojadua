@@ -29,7 +29,7 @@ const Portfolio = () => {
                     title={pageInfo.title} 
                     subtitle={pageInfo.subtitle} 
                 />
-                <p className="text-right text-blue-500 text-2xl font-bold">
+                <p className="text-right text-blue-500 text-xl font-bold">
                     {pageInfo.moreLink}
                 </p>
             </section>
