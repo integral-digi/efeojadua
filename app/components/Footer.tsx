@@ -30,8 +30,8 @@ const Footer = () => {
     return (    
         <motion.section 
             className="space-y-14 justify-center mx-auto"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, translateY: "200px" }}
+            whileInView={{ opacity: 1, translateY: "0" }}
             transition={{ delay: 0.5, duration: 3 }}
             exit={{ opacity: 0 }}
         >

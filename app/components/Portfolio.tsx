@@ -1,6 +1,9 @@
 "use client"
 import Heading from "./Heading";
 import { motion } from "framer-motion";
+import { entries } from "./PortfolioData";
+import ScrollButton from "./ScrollButton";
+import { useRouter } from "next/navigation";
 
 const pageInfo = {
     title: "Portfolio",
@@ -8,17 +11,14 @@ const pageInfo = {
     moreLink: "See all"
 };
 
-const entries = [
-    { id: 0, name: "Middletrust", tags: ["design", "frontend"], photo: "/assets/midBanner.jpg" },
-    { id: 1, name: "Travvelbaby", tags: ["design", "frontend"], photo: "/assets/travBanner.jpg" },
-    { id: 2, name: "Testace", tags: ["design", "frontend"], photo: "/assets/testBanner.jpg" },
-    { id: 3, name: "Toodle", tags: ["design", "frontend", "backend"], photo: "/assets/toodBanner.jpg" },
-]
+const samples = entries.slice(0,4);
 
 const Portfolio = () => {
+    const router = useRouter();
+
     return (
         <motion.section 
-            className="w-full space-y-6"
+            className="w-full space-y-6 relative"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 3 }}
@@ -29,12 +29,17 @@ const Portfolio = () => {
                     title={pageInfo.title} 
                     subtitle={pageInfo.subtitle} 
                 />
-                <p className="text-right text-blue-500 text-xl font-bold">
+                <p 
+                    className="text-right text-blue-500 text-xl font-bold cursor-pointer" 
+                    onClick={()=>router.push("/portfolio")}
+                >
                     {pageInfo.moreLink}
                 </p>
             </section>
-            <section className="overflow-x-scroll w-full flex items-center space-x-12 scrollbar-hide">
-                {entries.map((entry) => (
+            <ScrollButton scrollAmount={400} classSelector=".portfolioTray" operator="-" />
+            <ScrollButton scrollAmount={400} classSelector=".portfolioTray" operator="+" />
+            <section className="portfolioTray overflow-x-scroll w-full flex items-center space-x-12 scrollbar-hide">
+                {samples.map((entry) => (
                     <motion.section 
                         key={entry.id} 
                         className="flex items-center justify-center relative"
@@ -44,8 +49,8 @@ const Portfolio = () => {
                           }}
                         whileTap={{ scale: 0.2 }}
                     >
-                        <section className="bg-amber-700 opacity-20 w-full h-full absolute top-0 left-0 hover:opacity-0" />
-                        <section className="w-[448px] h-[576px]">
+                        <section className="opacity-20 bg-indigo-950 w-full h-full absolute top-0 left-0 hover:opacity-0" />
+                        <section className="w-[480px] h-[576px]">
                             <img 
                                 src={entry.photo} 
                                 alt={entry.name} 

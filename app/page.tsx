@@ -1,25 +1,22 @@
 "use client"
-import { motion, spring } from "framer-motion";
-import MainNav, { navItems } from "./components/MainNav";
+import MainNav, { navItems } from "./Components/MainNav";
 import Gradient from "@/public/assets/Gradient";
-import About from "./components/About";
-import Blog from "./components/Blog";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Portfolio from "./components/Portfolio";
-import Showcase from "./components/Showcase";
-import Reviews from "./components/Reviews";
-import SkillCloud from "./components/SkillCloud";
+import About from "./Components/About";
+import Blog from "./Components/Blog";
+import Footer from "./Components/Footer";
+import Hero from "./Components/Hero";
+import Portfolio from "./Components/Portfolio";
+import Showcase from "./Components/Showcase";
+import Reviews from "./Components/Reviews";
+import SkillCloud from "./Components/SkillCloud";
+import CursorAnim from "./Components/CursorAnim";
 
-const hamburgerIcon: string = "assets/hamburger.svg";
+export const hamburgerIcon: string = "assets/hamburger.svg";
 
 const Home = () => {
     return (
         <main className="px-36 bg-[#1A1A1A] lg:px-8">
-            <motion.div 
-                className="space-y-60 py-16 lg:space-y-32" 
-                transition={{ type: "spring", bounce: 1 }}
-            >
+            <div className="space-y-60 py-16 lg:space-y-32" >
                 <div className="space-y-36">
                     <MainNav icon={hamburgerIcon} />
                     <Hero />
@@ -31,10 +28,11 @@ const Home = () => {
                 <Reviews />
                 <Blog />
                 <Footer />
-            </motion.div>
+            </div>
             <div className="absolute -top-96 right-0 overflow-x-hidden animate-pulse z-10 lg:w-1/2">
                 <Gradient />
             </div>
+            <CursorAnim />
         </main>
     )
 }

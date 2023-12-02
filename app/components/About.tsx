@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
+import ScrollButton from "./ScrollButton";
 
 const aboutItems = {
     info: "Hey there! I'm a bit of a hybrid – a Product Designer and Developer rolled into one, with a solid 8 years on this wild ride. Would you believe my journey started with crunching numbers in accounting? But hey, passion's a powerful thing! It steered me towards becoming a self-taught frontend developer and designer extraordinaire. I thrive on untangling puzzles, finding creative solutions, and rocking it in UI/UX design, frontend, and backend development. My toolkit? Well, let's just say it's jam-packed with all the cool tech toys.",
@@ -17,7 +18,7 @@ const features = [
 const About = () => {
     return (
         <motion.section 
-            className="w-full space-y-12"
+            className="w-full space-y-12 relative"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 2 }}
@@ -38,7 +39,9 @@ const About = () => {
                     </p>
                 </section>
             </section>
-            <section className="w-full h-max flex items-center space-x-8 overflow-x-scroll scrollbar-hide">
+            <ScrollButton scrollAmount={400} classSelector=".features" operator="-" /> 
+            <ScrollButton scrollAmount={400} classSelector=".features" operator="+" /> 
+            <section className="features w-full h-max flex items-center space-x-8 overflow-x-scroll scrollbar-hide">
                 {features.map((feature, index) => (
                     <section 
                         className="w-fit h-[480px] space-y-8 bg-[#1A1A1A] rounded-2xl drop-shadow-md px-8 pt-24 pb-4 hover:bg-zinc-900/50" 

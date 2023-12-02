@@ -43,14 +43,14 @@ const Hero = () => {
                             className="text-6xl text-white font-black lg:text-4xl"
                             initial={{ opacity: 0 }}
                             animate={{ opacity:1 }}
-                            transition={{ duration: 0.1, delay: 0.2,  }}
+                            transition={{ duration: 0.1, delay: 0.1,  }}
                         >
                             {heroItems.heading}
                         </motion.h1>
                         <motion.h1 
                             className="text-6xl text-slate-400 font-black lg:text-4xl"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity:1 }}
+                            initial={{ opacity: 0, translateX: "-200px" }}
+                            animate={{ opacity:1, translateX: "0" }}
                             transition={{ duration: 1, delay: 1, ease: "linear" }}
                         >
                             {heroItems.headingTwo}
@@ -65,7 +65,7 @@ const Hero = () => {
                         className="hover:bg-indigo-700 hover:text-white flex items-center justify-center px-16 py-2 bg-white rounded-full text-zinc-900 font-bold"
                         whileHover={{
                             scale: 1.05,
-                            transition: { duration: 1 },
+                            transition: { duration: 1, type: "spring", stiffness: 400, damping: 10  },
                           }}
                         whileTap={{ scale: 0.1 }}
                         onClick={()=>router.replace("https://fiverr.com/eze_trust")}

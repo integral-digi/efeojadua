@@ -3,6 +3,7 @@ import { Fragment, useMemo } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { motion } from "framer-motion";
 import Menu from "./Menu";
+import Link from "next/link";
 
 export const navItems = {
     logo: "/assets/logo.svg",
@@ -30,11 +31,13 @@ const MainNav = ({ icon }: any) => {
             transition={{ duration: 0.2, delay: 0.1 }}
         >
             <nav className="w-full flex items-center justify-between">
-                <img
-                    src={navItems.logo}
-                    alt="logo"
-                    className="h-6 w-auto"
-                />
+                <Link href="/" passHref>
+                    <img
+                        src={navItems.logo}
+                        alt="logo"
+                        className="h-6 w-auto"
+                    />
+                </Link>
                 <Popover className="z-30">
                     <Popover.Button className="cursor-pointer">
                         <img
