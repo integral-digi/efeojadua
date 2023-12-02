@@ -19,7 +19,7 @@ const CursorAnim = () => {
               restDelta: 0.001
             }}
         >
-            <svg className="opacity-10 animate-spin bg-gradient-radial from-indigo-200 via-purple-500 to-amber-500 ...  blur-2xl rounded-full w-96 h-96" />
+            <svg className="opacity-5 animate-spin bg-gradient-radial from-indigo-800 via-gray-500 to-amber-500 ...  blur-2xl rounded-full w-96 h-96" />
         </motion.section>
     )
 }

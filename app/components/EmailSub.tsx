@@ -6,7 +6,7 @@ const formElements = {
 
 const EmailSub = () => {
     return (    
-        <section className="w-full h-24 bg-neutral-900 rounded-md px-4 flex items-center justify-center">
+        <section className="w-full h-24 bg-gray-900 rounded-md px-4 flex items-center justify-center">
             <section className="flex items-center space-x-16 w-full justify-center lg:space-x-0">
                 <p className="text-white text-2xl font-bold leading-loose tracking-wide lg:hidden">
                     {formElements.name}

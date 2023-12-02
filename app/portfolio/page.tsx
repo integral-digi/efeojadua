@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 
 const PortHome = () => {
     return (
-        <section className="w-full bg-[#1A1A1A] px-36 lg:px-8">
+        <section className="w-full bg-gray-950 px-36 lg:px-8">
             <section className="py-16 space-y-60">
                 <MainNav icon={hamburgerIcon} />
                 <PortHeading />

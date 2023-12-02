@@ -52,7 +52,7 @@ const Reviews = () => {
       {reviewData.map((review) => (
         <section
           key={review.id}
-          className={`bg-neutral-900 bg-opacity-40 rounded-xl p-10 cursor-pointer space-y-9 shadow ${inView === review.id ? "" : "h-60 lg:h-fit"}`}
+          className={`bg-gray-900 bg-opacity-40 rounded-xl p-10 cursor-pointer space-y-9 shadow ${inView === review.id ? "" : "h-60 lg:h-fit"}`}
           onClick={() => handleClick(review.id)}
         >
           <img

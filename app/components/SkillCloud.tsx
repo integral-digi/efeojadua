@@ -59,7 +59,7 @@ const SkillCloud = () => {
                 {skills.map((skill, index) => (
                     <motion.section 
                         key={index}
-                        className="hover:animate-bounce px-3 py-1 bg-zinc-800 rounded-full flex items-center justify-center"
+                        className="hover:animate-bounce px-3 py-1 bg-gray-900 rounded-full flex items-center justify-center"
                     >
                         <p className="text-white text-base text-center font-semibold">
                             {skill}

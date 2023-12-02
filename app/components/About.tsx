@@ -44,7 +44,7 @@ const About = () => {
             <section className="features w-full h-max flex items-center space-x-8 overflow-x-scroll scrollbar-hide">
                 {features.map((feature, index) => (
                     <section 
-                        className="w-fit h-[480px] space-y-8 bg-[#1A1A1A] rounded-2xl drop-shadow-md px-8 pt-24 pb-4 hover:bg-zinc-900/50" 
+                        className="w-fit h-[480px] space-y-8 bg-gray-950 rounded-2xl drop-shadow-md px-8 pt-24 pb-4 hover:bg-gray-900/20" 
                         key={index}
                     >
                         <img 

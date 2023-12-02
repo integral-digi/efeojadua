@@ -15,7 +15,7 @@ export const hamburgerIcon: string = "assets/hamburger.svg";
 
 const Home = () => {
     return (
-        <main className="px-36 bg-[#1A1A1A] lg:px-8">
+        <main className="px-36 bg-gray-950 lg:px-8">
             <div className="space-y-60 py-16 lg:space-y-32" >
                 <div className="space-y-36">
                     <MainNav icon={hamburgerIcon} />

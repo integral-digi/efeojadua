@@ -1,9 +1,11 @@
-export const generateStaticParams = () => {
+export const PortHome = ({entry}: any) => {
     const portTemplate = "";
 
     return (
+        <section className="">
 
+        </section>
     )
 }
 
-generateStaticParams;
+export default PortHome;
