@@ -1,5 +1,4 @@
-import Gradient from "@/public/assets/Gradient";
-import { motion, spring } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 import { followCursor } from "./followCursor";
 
@@ -19,7 +18,7 @@ const CursorAnim = () => {
               restDelta: 0.001
             }}
         >
-            <svg className="opacity-5 animate-spin bg-gradient-radial from-indigo-800 via-gray-500 to-amber-500 ...  blur-2xl rounded-full w-96 h-96" />
+            <svg className="opacity-5 animate-spin bg-gradient-radial from-neutral-600 via-gray-800 to-indigo-800 ...  blur-2xl rounded-full w-[640px] h-[640px]" />
         </motion.section>
     )
 }

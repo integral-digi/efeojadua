@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import Heading from "./Heading";
 import { motion } from "framer-motion";
 import { entries } from "./PortfolioData";
@@ -40,8 +41,8 @@ const Portfolio = () => {
             <ScrollButton scrollAmount={400} classSelector=".portfolioTray" operator="+" />
             <section className="portfolioTray overflow-x-scroll w-full flex items-center space-x-12 scrollbar-hide">
                 {samples.map((entry) => (
+                    <Link href={`/portfolio/${entry.id}`} as={`/portfolio/${entry.id}`} key={entry.id}>
                     <motion.section 
-                        key={entry.id} 
                         className="flex items-center justify-center relative"
                         whileHover={{
                             scale: 1.05,
@@ -77,6 +78,7 @@ const Portfolio = () => {
                             </section>
                         </section>
                     </motion.section>
+                    </Link>
                 ))}
             </section>
         </motion.section>
