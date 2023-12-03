@@ -17,7 +17,7 @@ const heroItems: HeroItemProps = {
     headingTwo: "Passion & Precision",
     subtitle: "Hi, I’m Efe Ojadua - Senior Product Designer & Developer",
     buttonText: "Hire me",
-    linkText: "Download CV"
+    linkText: "Download Résumé"
 }
 
 
@@ -58,7 +58,7 @@ const Hero = () => {
                 <section className="flex items-center space-x-6">
                     <motion.button 
                         className="hover:text-white flex items-center justify-center px-16 py-2 bg-white rounded-full text-zinc-900 font-bold"
-                        initial={{ opacity: 1, backgroundColor:"#FFFFFF", translateX: 0 }}
+                        initial={{ opacity: 1, backgroundColor:"#FFFFFF"}}
                         whileHover={{
                             backgroundColor: "indigo",
                             transition: { duration: 1, type: "tween", stiffness: 400, damping: 10  },

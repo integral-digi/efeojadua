@@ -1,23 +1,30 @@
-import { entries } from "@/app/Components/PortfolioData";
-import PortfolioPage from "../Components/PortfolioItem";
+import React from 'react';
+import { entries } from '@/app/Components/PortfolioData';
+import PortfolioPage from '../Components/PortfolioItem';
 
-const singleEntry = entries.map((entry)=>(entry));
+const Portfolio: React.FC = () => {
+  const portfolioItem = entries.find((item) => item.id === parseInt(params.portfolioId));
 
-export const generateStaticParams = async() => {
-    const entries = await fetch('.../Components/PortfolioData').then((res) => res.json())
-   
-    return entries.map((entry) => ({
-      name: entry.name,
-    }))
+  if (!portfolioItem) {
+    return <div>Portfolio item not found</div>;
   }
 
-const PortHome = ({ entry }: { entry: { name: string } }) => {
-  const { name } = entry
-  
-  return (
-    <PortfolioPage portfolioItem={name} />
-  )  
+  return <PortfolioPage portfolioItem={portfolioItem} />;
+};
+
+export async function generateStaticParams() {
+  return {
+    params: entries.map((item) => ({
+      portfolioId: item.id.toString(),
+    })),
+  };
 }
 
-export default PortHome;
+export async function getStaticProps({ params }: any) {
+  const portfolioId = parseInt(params.portfolioId);
+  const portfolioItem = entries.find((item) => item.id === portfolioId);
 
+  return { props: { portfolioItem } };
+}
+
+export default Portfolio;
