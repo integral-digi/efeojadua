@@ -23,7 +23,7 @@ const reviewData: ReviewProps[] = [
     reviewer: "Levi",
     reviewerIcon: "assets/userOne.png",
     company: "MasteryEcom",
-    comment: "A star talent. I and my CDO are truly grateful for finding Efe. Incredible experience throughout, even with a few difficulties on our end. The skill level and attention to detail are next to none, and we thoroughly look forward to working with Efe_trust again!"
+    comment: "A star talent. I and my CDO are truly grateful for finding Efe. Incredible experience throughout, even with a few difficulties on our end. The skill level and attention to detail are next to none, and we thoroughly look forward to working with Efe again!"
   },
   {
     id: 3,
