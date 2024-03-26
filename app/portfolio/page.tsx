@@ -3,7 +3,7 @@ import PostTray from "./components/PostTray";
 import MainNav from "../components/MainNav";
 import { hamburgerIcon } from "../page";
 import PortHeading from "./components/PortHeading";
-import Footer from "../components/Footer";
+import Footer from "../Components/Footer";
 
 const PortHome = () => {
     return (
