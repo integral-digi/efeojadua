@@ -1,10 +1,11 @@
+"use client"
 import { motion } from "framer-motion";
 import { useRef } from "react";
-import { followCursor } from "./followCursor";
+import { FollowCursor } from "./FollowCursor";
 
 const CursorAnim = () => {
     const ref = useRef(null);
-    const { x, y } = followCursor(ref);
+    const { x, y } = FollowCursor(ref);
 
     return (
         <motion.section 

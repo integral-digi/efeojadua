@@ -1,6 +1,6 @@
 import { useState, RefObject, useEffect } from "react";
 
-export const followCursor = (ref: RefObject<HTMLElement>) => {
+export const FollowCursor = (ref: RefObject<HTMLElement>) => {
   const [point, setPoint] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
