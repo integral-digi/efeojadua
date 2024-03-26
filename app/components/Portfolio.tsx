@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { projectData } from "./PortfolioData";
 import ScrollButton from "./ScrollButton";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const pageInfo = {
     title: "Portfolio",
@@ -52,9 +53,11 @@ const Portfolio = () => {
                     >
                         <section className="opacity-20 bg-indigo-950 w-full h-full absolute top-0 left-0 hover:opacity-0" />
                         <section className="w-[480px] h-[576px]">
-                            <img 
+                            <Image 
                                 src={entry.photo} 
                                 alt={entry.name} 
+                                width={480}
+                                height={576}
                                 className="w-full h-full object-cover" 
                             />
                             <section className="absolute bottom-8 left-8 z-20">
