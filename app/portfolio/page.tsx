@@ -1,3 +1,4 @@
+"use client"
 import PostTray from "./Components/PostTray";
 import MainNav from "../Components/MainNav";
 import { hamburgerIcon } from "../page";
