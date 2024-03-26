@@ -1,5 +1,5 @@
 "use client"
-import { projectData, ProjectDataProps } from "@/app/Components/PortfolioData";
+import { projectData, ProjectDataProps } from "@/app/components/PortfolioData";
 import { motion } from "framer-motion";
 import { Popover, Transition } from "@headlessui/react";
 import ProjectModal from "./ProjectModal";

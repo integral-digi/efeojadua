@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
-import EmailSub from "./EmailSub";
 import { motion } from "framer-motion";
+import EmailSub from "./EmailSub";
 
 interface SocialProps {
     id: number;

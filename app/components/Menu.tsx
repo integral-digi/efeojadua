@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import MainNav, { navItems } from "./MainNav";
+import MainNav from "./MainNav";
 import { motion } from "framer-motion";
 import { Popover } from "@headlessui/react";
 import { socials } from "./Footer";

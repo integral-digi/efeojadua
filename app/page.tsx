@@ -1,14 +1,14 @@
-import MainNav from "./Components/MainNav";
+import MainNav from "./components/MainNav";
 import Gradient from "@/public/assets/Gradient";
-import About from "./Components/About";
-import Blog from "./Components/Blog";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import Portfolio from "./Components/Portfolio";
-import Showcase from "./Components/Showcase";
-import Reviews from "./Components/Reviews";
-import SkillCloud from "./Components/SkillCloud";
-import CursorAnim from "./Components/CursorAnim";
+import About from "./components/About";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Portfolio from "./components/Portfolio";
+import Showcase from "./components/Showcase";
+import Reviews from "./components/Reviews";
+import SkillCloud from "./components/SkillCloud";
+import CursorAnim from "./components/CursorAnim";
 
 export const hamburgerIcon: string = "assets/hamburger.svg";
 

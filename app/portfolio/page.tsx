@@ -1,9 +1,9 @@
 "use client"
-import PostTray from "./Components/PostTray";
-import MainNav from "../Components/MainNav";
+import PostTray from "./components/PostTray";
+import MainNav from "../components/MainNav";
 import { hamburgerIcon } from "../page";
-import PortHeading from "./Components/PortHeading";
-import Footer from "../Components/Footer";
+import PortHeading from "./components/PortHeading";
+import Footer from "../components/Footer";
 
 const PortHome = () => {
     return (

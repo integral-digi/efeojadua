@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ProjectDataProps } from "@/app/Components/PortfolioData";
+import { ProjectDataProps } from "@/app/components/PortfolioData";
 
 const labels = ["client", "year", "link", "description", "repo"];
 
