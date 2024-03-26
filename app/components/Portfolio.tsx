@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { projectData } from "./PortfolioData";
 import ScrollButton from "./ScrollButton";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 
 const pageInfo = {
     title: "Portfolio",
@@ -42,7 +41,7 @@ const Portfolio = () => {
             <ScrollButton scrollAmount={400} classSelector=".portfolioTray" operator="+" />
             <section className="portfolioTray overflow-x-scroll w-full flex items-center space-x-12 scrollbar-hide">
                 {samples.map((entry) => (
-                    <Link href={`/portfolio/${entry.id}`} as={`/portfolio/${entry.id}`} key={entry.id}>
+                    <Link href={"/portfolio"} key={entry.id}>
                     <motion.section 
                         className="flex items-center justify-center relative"
                         whileHover={{
@@ -53,11 +52,9 @@ const Portfolio = () => {
                     >
                         <section className="opacity-20 bg-indigo-950 w-full h-full absolute top-0 left-0 hover:opacity-0" />
                         <section className="w-[480px] h-[576px]">
-                            <Image 
+                            <img 
                                 src={entry.photo} 
                                 alt={entry.name} 
-                                width={480}
-                                height={576}
                                 className="w-full h-full object-cover" 
                             />
                             <section className="absolute bottom-8 left-8 z-20">
