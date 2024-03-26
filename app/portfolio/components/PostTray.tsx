@@ -18,7 +18,6 @@ const PostTray = () => {
                                     scale: 1.05,
                                     transition: { duration: 1 },
                                 }}
-                                whileTap={{ scale: 0.2 }}
                             >
                                 <section className="bg-amber-700 opacity-90 w-full h-full absolute top-0 left-0 hover:opacity-0" />
                                 <section className="w-full h-[640px] justify-center relative">
@@ -57,7 +56,7 @@ const PostTray = () => {
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 translate-y-1"
                         >
-                            <Popover.Panel className="z-50 top-0 right-0 w-full h-[640px] absolute" id={`project-modal-${project.id}`}>
+                            <Popover.Panel className="z-50 top-0 right-0 w-full h-full min-h-screen absolute" id={`project-modal-${project.id}`}>
                                 <ProjectModal project={findProjectById(project.id)} />
                             </Popover.Panel>
                         </Transition>
