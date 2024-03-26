@@ -1,7 +1,7 @@
 "use client"
 import PostTray from "./components/PostTray";
 import MainNav from "../components/MainNav";
-import { hamburgerIcon } from "../page";
+import { hamburgerIcon } from "../components/Menu";
 import PortHeading from "./components/PortHeading";
 import Footer from "../components/Footer";
 
