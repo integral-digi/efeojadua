@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Heading from "./Heading";
 import { motion } from "framer-motion";
-import { entries } from "./PortfolioData";
+import { projectData } from "./PortfolioData";
 import ScrollButton from "./ScrollButton";
 import { useRouter } from "next/navigation";
 
@@ -12,7 +12,7 @@ const pageInfo = {
     moreLink: "See all"
 };
 
-const samples = entries.slice(0,4);
+const samples = projectData.slice(0,4);
 
 const Portfolio = () => {
     const router = useRouter();

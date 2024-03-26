@@ -1,6 +1,6 @@
 const headingInfo = {
     title: "Portfolio",
-    subtitle: "A showcase of some of my recent web and app design and development projects. "
+    subtitle: "A showcase of some of my recent app design, and development projects. "
 }
 
 const PortHeading = () => {

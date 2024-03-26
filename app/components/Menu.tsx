@@ -22,6 +22,7 @@ const menuItems: MenuItemsProps[] = [
 
 const Menu = () => {
     const router = useRouter();
+    
     return (
         <section className="bg-gray-950 w-full h-full min-h-screen z-50">
             <section className="space-y-32 px-36 py-16 lg:px-8 lg:space-y-24">

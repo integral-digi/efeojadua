@@ -55,7 +55,7 @@ const SkillCloud = () => {
             exit={{ opacity: 0 }}
         >
             <Heading title="Skill Cloud" subtitle="What I work with" />
-            <section className="w-full flex items-center space-x-6 flex-1 flex-wrap space-y-12 lg:space-x-2">
+            <section className="w-full flex items-baseline gap-6 flex-1 flex-wrap space-y-12 lg:space-x-2">
                 {skills.map((skill, index) => (
                     <motion.section 
                         key={index}

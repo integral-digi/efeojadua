@@ -46,7 +46,7 @@ const Hero = () => {
                             className="text-6xl text-slate-400 font-black lg:text-4xl"
                             initial={{ opacity: 0, translateX: "-200px" }}
                             animate={{ opacity:1, translateX: "0" }}
-                            transition={{ duration: 1, delay: 1, ease: "linear" }}
+                            transition={{ duration: 1, delay: 1, ease: "linear", type: "spring" }}
                         >
                             {heroItems.headingTwo}
                         </motion.h1>
