@@ -1,51 +1,32 @@
 import Image from "next/image";
-import { projectData, ProjectDataProps } from "@/app/Components/PortfolioData";
-import Link from "next/link";
+import { ProjectDataProps } from "@/app/Components/PortfolioData";
 
-const labels = [ "client", "year", "link", "description", "repo", ]
+const labels = ["client", "year", "link", "description", "repo"];
 
+const ProjectModal = ({ project }: { project?: ProjectDataProps }) => {
+    // If project is undefined, render a placeholder or nothing
+    if (!project) return null; // or return some default component or message
 
-const ProjectModal = ( {project}: { project: ProjectDataProps }) => {
     return (
-        <section className="project-modal w-1/2 p-16 space-y-8 bg-gray-900 z-50 min-h-screen h-full fixed overflow-y-scroll shadow-2xl">
-            <section className="flex items-center justify-between">
-                <p className="text-base text-white font-semibold">
-                    {labels[0]}
-                </p>
+        <section className="project-modal w-[80%] px-8 space-y-8">
+            <section className="flex items-center space-x-8">
+                <p className="text-base text-white font-semibold">{labels[0]}</p>
                 <section className="">
-                    <Image  
+                    <Image
                         src={project.logo}
-                        width={160}
-                        height={12}
+                        width={200}
+                        height={16}
                         alt={project.name}
                     />
                 </section>
             </section>
-            <section className="flex items-center justify-between">
-                <p className="text-base text-white font-semibold">
-                    {labels[1]}
-                </p>
-                <p className="text-base text-white font-bold">
-                    {project.year}
-                </p>
+            <section className="flex items-center space-x-8">
+                <p className="text-base text-white font-semibold">{labels[2]}</p>
+                <p className="text-lg text-white font-bold">{project.year}</p>
             </section>
-            <section className="flex items-center justify-between">
-                <p className="text-base text-white font-semibold">
-                    {labels[2]}
-                </p>
-                <p className="text-base text-white font-bold underline">
-                    <Link href={project.link} passHref>
-                        {project.link}
-                    </Link>
-                </p>
-            </section>
-            <section className="w-full min-w-full max-w-full">
-                <Image
-                    src={project.photo}
-                    width={720}
-                    height={640}
-                    alt={project.name}
-                />
+            <section className="flex items-center space-x-8">
+                <p className="text-base text-white font-semibold">{labels[3]}</p>
+                <p className="text-lg text-white font-bold">{project.link}</p>
             </section>
             <section className="block">
                 <p className="text-base text-white font-bold leading-10 max-w-fit">
@@ -53,12 +34,10 @@ const ProjectModal = ( {project}: { project: ProjectDataProps }) => {
                 </p>
             </section>
             <section className="flex items-center space-x-8">
-                <p className="text-base text-white font-bold">
-                    {project.github}
-                </p>
+                <p className="text-base text-white font-bold">{project.github}</p>
             </section>
         </section>
-    )
-}
+    );
+};
 
 export default ProjectModal;

@@ -57,7 +57,7 @@ const PostTray = () => {
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 translate-y-1"
                         >
-                            <Popover.Panel className="z-50 top-0 right-0 w-full h-max min-h-screen absolute" id={`project-modal-${project.id}`}>
+                            <Popover.Panel className="z-50 top-0 right-0 w-full h-[640px] absolute" id={`project-modal-${project.id}`}>
                                 <ProjectModal project={findProjectById(project.id)} />
                             </Popover.Panel>
                         </Transition>
