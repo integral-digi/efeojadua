@@ -1,5 +1,4 @@
-"use client"
-import MainNav, { navItems } from "./Components/MainNav";
+import MainNav from "./Components/MainNav";
 import Gradient from "@/public/assets/Gradient";
 import About from "./Components/About";
 import Blog from "./Components/Blog";
@@ -16,11 +15,11 @@ export const hamburgerIcon: string = "assets/hamburger.svg";
 const Home = () => {
     return (
         <main className="px-36 bg-gray-950 lg:px-8">
-            <div className="space-y-60 py-16 lg:space-y-32" >
-                <div className="space-y-36">
+            <section className="space-y-60 py-16 lg:space-y-32" >
+                <section className="space-y-36">
                     <MainNav icon={hamburgerIcon} />
                     <Hero />
-                </div>
+                </section>
                 <About />
                 <SkillCloud />
                 <Showcase />
@@ -28,10 +27,10 @@ const Home = () => {
                 <Reviews />
                 <Blog />
                 <Footer />
-            </div>
-            <div className="absolute -top-96 right-0 overflow-x-hidden animate-pulse z-10 lg:w-1/2">
+            </section>
+            <section className="absolute -top-96 right-0 overflow-x-hidden animate-pulse z-10 lg:w-1/2">
                 <Gradient />
-            </div>
+            </section>
             <CursorAnim />
         </main>
     )
