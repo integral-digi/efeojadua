@@ -22,7 +22,7 @@ const logosTwo: LogoProps[] = [
     { id: 8, name: "opennode", src: "/assets/opennode.svg" },
     { id: 9, name: "quincy", src: "/assets/quincy.svg" },
     { id: 10, name: "rentvec", src: "/assets/rentvec.svg" },
-    { id: 11, name: "bliqit", src: "/assets/bliqit.svg" },
+    { id: 11, name: "bliqit", src: "/assets/Bliqit.svg" },
     { id: 12, name: "metamars", src: "/assets/metamars.svg" },
 ]
 
