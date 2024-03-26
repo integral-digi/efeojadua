@@ -9,8 +9,7 @@ import Showcase from "./components/Showcase";
 import Reviews from "./components/Reviews";
 import SkillCloud from "./components/SkillCloud";
 import CursorAnim from "./components/CursorAnim";
-
-export const hamburgerIcon: string = "assets/hamburger.svg";
+import { hamburgerIcon } from "./components/Menu";
 
 const Home = () => {
     return (

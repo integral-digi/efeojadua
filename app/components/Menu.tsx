@@ -19,6 +19,7 @@ const menuItems: MenuItemsProps[] = [
     { name: "Contact", href: "mailto:ojaduagreat@gmail.com" }
 ]
 
+export const hamburgerIcon: string = "assets/hamburger.svg";
 
 const Menu = () => {
     const router = useRouter();
