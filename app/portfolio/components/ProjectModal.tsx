@@ -39,7 +39,7 @@ const ProjectModal = ({ project }: { project?: ProjectDataProps }) => {
             </section>
             <section className="flex items-center justify-between">
                 <p className="text-base text-white font-semibold">{labels[2]}</p>
-                <Link href={project.link} passHref>
+                <Link href={project.link} passHref  target="blank">
                     <p className="text-base text-white font-semibold underline">{project.link}</p>
                 </Link>
             </section>
@@ -61,7 +61,7 @@ const ProjectModal = ({ project }: { project?: ProjectDataProps }) => {
             </section>
             <section className="flex items-center justify-between">
                 <p className="text-base text-white font-bold">{labels[4]}</p>
-                <Link href={project.github} passHref>
+                <Link href={project.github} passHref target="blank">
                     <p className="text-base text-white font-bold underline">{project.github}</p>
                 </Link>
             </section>
