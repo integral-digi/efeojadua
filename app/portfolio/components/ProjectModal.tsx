@@ -10,6 +10,15 @@ const ProjectModal = ({ project }: { project?: ProjectDataProps }) => {
 
     return (
         <section className="project-modal w-1/2 px-12 py-16 space-y-12 bg-gray-950 shadow-xl h-full min-h-screen fixed overflow-y-scroll lg:w-full">
+            <section className="relative">
+                <Image
+                    src="/assets/close.svg"
+                    width={16}
+                    height={16}
+                    alt="close"
+                    className="absolute right-0"
+                />
+            </section>
             <section className="flex items-center justify-between">
                 <p className="text-base text-white font-semibold">{labels[0]}</p>
                 <section className="">
