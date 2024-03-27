@@ -132,7 +132,7 @@ export const projectData: ProjectDataProps[] = [
         id: 7,
         name: "MasteryEcom",
         tags: ["design", "frontend"],
-        photo: "/assets/mastery1ecom.png",
+        photo: "/assets/masteryecom.png",
         logo: "/assets/masteryecom.svg",
         intro: "",
         midsection: "",
