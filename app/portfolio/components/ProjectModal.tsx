@@ -15,8 +15,8 @@ const ProjectModal = ({ project }: { project?: ProjectDataProps }) => {
                 <Popover.Button>
                     <Image
                         src="/assets/close.svg"
-                        width={16}
-                        height={16}
+                        width={12}
+                        height={12}
                         alt="close"
                         className="absolute right-0"
                     />
