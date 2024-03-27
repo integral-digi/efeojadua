@@ -23,12 +23,12 @@ const ProjectModal = ({ project }: { project?: ProjectDataProps }) => {
             </section>
             <section className="flex items-center justify-between">
                 <p className="text-base text-white font-semibold">{labels[1]}</p>
-                <p className="text-lg text-white font-bold">{project.year}</p>
+                <p className="text-base text-white font-bold">{project.year}</p>
             </section>
             <section className="flex items-center justify-between">
                 <p className="text-base text-white font-semibold">{labels[2]}</p>
                 <Link href={project.link} passHref>
-                    <p className="text-lg text-white font-bold underline">{project.link}</p>
+                    <p className="text-base text-white font-semibold underline">{project.link}</p>
                 </Link>
             </section>
             <section className="min-w-full">
