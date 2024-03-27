@@ -51,9 +51,12 @@ const ProjectModal = ({ project }: { project?: ProjectDataProps }) => {
                     height={480}
                 />
             </section>
-            <section className="block">
+            <section className="block space-y-12">
                 <p className="text-base text-white font-bold leading-10 max-w-fit">
                     {project.description}
+                </p>
+                <p className="text-base text-white font-bold leading-10 max-w-fit">
+                    {project.midsection}
                 </p>
             </section>
             <section className="flex items-center justify-between">
