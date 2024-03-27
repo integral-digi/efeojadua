@@ -76,7 +76,7 @@ export const projectData: ProjectDataProps[] = [
         photoTwo: "",
         photoThree: "",
         year: "2023",
-        link: "https://toodleapp.vercel.app",
+        link: "https://toodle-v1.vercel.app",
         description: "Toodle is a productivity powerhouse, offering intuitive task management and collaboration features. Whether you're managing personal projects or coordinating with a team, Toodle helps you stay organized and efficient, every step of the way.",
         github: "https://github.com/integral-digi/toodle"
     },
