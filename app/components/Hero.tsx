@@ -57,7 +57,7 @@ const Hero = () => {
                 </section>
                 <section className="flex items-center space-x-6">
                     <motion.button 
-                        className="hover:text-white flex items-center justify-center px-16 py-2 bg-white rounded-full text-zinc-900 font-bold"
+                        className="hover:text-white whitespace-nowrap flex items-center justify-center px-16 py-2 bg-white rounded-full text-zinc-900 font-bold lg:px-6"
                         initial={{ opacity: 1, backgroundColor:"#FFFFFF"}}
                         whileHover={{
                             backgroundColor: "indigo",

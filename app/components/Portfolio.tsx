@@ -31,7 +31,7 @@ const Portfolio = () => {
                     subtitle={pageInfo.subtitle} 
                 />
                 <p 
-                    className="text-right text-blue-500 text-xl font-bold cursor-pointer" 
+                    className="text-right text-blue-500 text-xl font-bold cursor-pointer whitespace-nowrap" 
                     onClick={()=>router.push("/portfolio")}
                 >
                     {pageInfo.moreLink}
