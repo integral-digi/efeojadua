@@ -15,7 +15,7 @@ const heroItems: HeroItemProps = {
     photo: "/assets/efeimg.jpg",
     heading: "Crafting Digital Experiences with",
     headingTwo: "Passion & Precision",
-    subtitle: "Hi, I’m Efe Ojadua - Senior Product Designer & Developer",
+    subtitle: "Hi, I'm Efe Ojadua - Senior Product Designer & Developer",
     buttonText: "Hire me",
     linkText: "Download Résumé"
 }
