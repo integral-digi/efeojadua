@@ -17,7 +17,7 @@ export const socials: SocialProps[] = [
     { id: 4, name: "facebook", href: "https://fb.com/ojadua.efe", icon: "/assets/facebook.svg" },
     { id: 5, name: "medium", href: "https://medium.com/ogreat00", icon: "/assets/medium.svg" },
     { id: 6, name: "github", href: "https://github.com/integral-digi", icon: "/assets/github.svg" },
-    { id: 7, name: "linkedin", href: "https://linkedin.com/ojadua-efe", icon: "/assets/x.svg" },
+    { id: 7, name: "linkedin", href: "https://linkedin.com/ojadua-efe", icon: "/assets/linked-in.svg" },
 ]
 
 const linkTo = {
