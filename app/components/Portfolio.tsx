@@ -4,7 +4,6 @@ import Heading from "./Heading";
 import { motion } from "framer-motion";
 import { projectData } from "./PortfolioData";
 import ScrollButton from "./ScrollButton";
-import { useRouter } from "next/navigation";
 
 const pageInfo = {
     title: "Portfolio",
@@ -15,7 +14,6 @@ const pageInfo = {
 const samples = projectData.slice(0,4);
 
 const Portfolio = () => {
-    const router = useRouter();
 
     return (
         <motion.section 
@@ -30,12 +28,13 @@ const Portfolio = () => {
                     title={pageInfo.title} 
                     subtitle={pageInfo.subtitle} 
                 />
-                <p 
-                    className="text-right text-blue-500 text-xl font-bold cursor-pointer whitespace-nowrap" 
-                    onClick={()=>router.push("/portfolio")}
-                >
-                    {pageInfo.moreLink}
-                </p>
+                <Link href="/portfolio" passHref>
+                    <p 
+                        className="text-right text-blue-500 text-xl font-bold cursor-pointer whitespace-nowrap" 
+                    >
+                        {pageInfo.moreLink}
+                    </p>
+                </Link>
             </section>
             <ScrollButton scrollAmount={400} classSelector=".portfolioTray" operator="-" />
             <ScrollButton scrollAmount={400} classSelector=".portfolioTray" operator="+" />
