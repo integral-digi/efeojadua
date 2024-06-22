@@ -91,7 +91,7 @@ const Blog: React.FC = () => {
       className="w-full"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.5, duration: 3 }}
+      transition={{ delay: 0.5, duration: 0.8 }}
       exit={{ opacity: 0 }}
     >
       <Heading title={blogData.title} subtitle={blogData.subtitle} />

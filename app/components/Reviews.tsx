@@ -46,7 +46,7 @@ const Reviews = () => {
       className="flex items-center space-x-6 w-full lg:block lg:space-y-6 lg:space-x-0"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.5, duration: 3 }}
+      transition={{ delay: 0.5, duration: 0.8 }}
       exit={{ opacity: 0 }}
     >
       {reviewData.map((review) => (

@@ -32,7 +32,7 @@ const Footer = () => {
             className="space-y-14 justify-center mx-auto"
             initial={{ opacity: 0, translateY: "200px" }}
             whileInView={{ opacity: 1, translateY: "0" }}
-            transition={{ delay: 0.5, duration: 3 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
             exit={{ opacity: 0 }}
         >
             <EmailSub />

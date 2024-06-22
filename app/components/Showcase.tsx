@@ -37,7 +37,7 @@ const Showcase = () => {
             className="w-full lg:hidden"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 3 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
             exit={{ opacity: 0 }}
         >
             <section className="space-y-16">

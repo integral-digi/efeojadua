@@ -21,7 +21,7 @@ const About = () => {
             className="w-full space-y-12 relative"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 2 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
             exit={{ opacity: 0 }}
         >
             <section className="space-y-6">

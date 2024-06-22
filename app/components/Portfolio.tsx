@@ -20,7 +20,7 @@ const Portfolio = () => {
             className="w-full space-y-6 relative"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 3 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
             exit={{ opacity: 0 }}
         >
             <section className="flex justify-between items-end">

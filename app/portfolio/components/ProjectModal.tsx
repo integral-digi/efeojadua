@@ -39,8 +39,10 @@ const ProjectModal = ({ project }: { project?: ProjectDataProps }) => {
             </section>
             <section className="flex items-center justify-between">
                 <p className="text-base text-white font-semibold">{labels[2]}</p>
-                <Link href={project.link} passHref  target="blank">
-                    <p className="text-base text-white font-semibold underline">{project.link}</p>
+                <Link href={project.link} passHref target="_blank">
+                    <p className="text-base text-white font-semibold underline" >
+                        {project.link}
+                    </p>
                 </Link>
             </section>
             <section className="min-w-full">
@@ -53,16 +55,44 @@ const ProjectModal = ({ project }: { project?: ProjectDataProps }) => {
             </section>
             <section className="block space-y-12">
                 <p className="text-base text-white font-bold leading-10 max-w-fit">
-                    {project.description}
+                    {project.intro || ""}
                 </p>
                 <p className="text-base text-white font-bold leading-10 max-w-fit">
-                    {project.midsection}
+                    {project.midsection || ""}
+                </p>
+                {project.photoTwo && (
+                    <section className="w-full">
+                        <Image 
+                            src={project.photoTwo}
+                            alt={project.name}
+                            width={640}
+                            height={480}
+                        />
+                    </section>
+                )}
+                <p className="text-base text-white font-bold leading-10 max-w-fit">
+                    {project.description || ""}
+                </p>
+                {project.photoThree && (
+                    <section className="w-full">
+                        <Image 
+                            src={project.photoThree}
+                            alt={project.name}
+                            width={640}
+                            height={480}
+                        />
+                    </section>
+                )}
+                <p className="text-base text-white font-bold leading-10 max-w-fit">
+                    {project.outro || ""}
                 </p>
             </section>
             <section className="flex items-center justify-between">
                 <p className="text-base text-white font-bold">{labels[4]}</p>
-                <Link href={project.github} passHref target="blank">
-                    <p className="text-base text-white font-bold underline">{project.github}</p>
+                <Link href={project.github} passHref  target="_blank">
+                    <p className="text-base text-white font-bold underline">
+                        {project.github}
+                    </p>
                 </Link>
             </section>
             <section className="w-full">
