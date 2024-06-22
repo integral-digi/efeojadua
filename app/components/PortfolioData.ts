@@ -23,7 +23,7 @@ export const projectData: ProjectDataProps[] = [
         photo: "/assets/middletrust.png",
         logo: "/assets/middletrust.svg",
         intro: "",
-        midsection: "Middletrust desired a brand refresh, and that is what they got. Both UI/UX design and frontend development was handled by me. The result was a beautiful and user-friendly app built with NextJS, and Tailwind CSS that has increased the positive perception towards the brand, and overall conversion.",
+        midsection: "Middletrust desired a brand refresh, and that is what they got. Both UI/UX design and frontend development were handled by me. The result was a beautiful and user-friendly app built with NextJS, and Tailwind CSS that has increased the positive perception towards the brand, and overall conversion.",
         outro: "",
         photoTwo: "",
         photoThree: "",
@@ -159,5 +159,21 @@ export const projectData: ProjectDataProps[] = [
         link: "https://hims.com/",
         description: "hims.com is a leading online healthcare platform offering personalized telemedicine services and wellness products. With its user-friendly interface and comprehensive healthcare offerings, hims.com provides convenient access to medical consultations, prescriptions, and wellness solutions, promoting overall health and well-being.",
         github: ""
+    },
+    {
+        id: 9,
+        name: "Clash Ultra",
+        tags: ["design", "frontend"],
+        photo: "/assets/clashultra.png",
+        logo: "/assets/clashultra.svg",
+        intro: "For my latest project, I created a bespoke landing page template specifically tailored for indie game developers, aptly named the 'Indie Game Landing Page Template'. The objective was clear: design a responsive platform resembling the sleek interfaces of popular games like Altos Adventure and FireWatch, yet with unique enhancements to cater to indie game aesthetics.",
+        midsection: "Using ReactJS as the foundational framework and complementing it with Tailwind CSS for streamlined styling, I crafted a fully functional template that seamlessly adapts across both web and mobile platforms. This responsive design ensures an optimal user experience regardless of device, crucial for engaging with gamers who are passionate about indie titles and adventure genres.",
+        outro: "The template features a user-friendly interface that allows developers to showcase their games effectively. By omitting a backend implementation, the focus remained on delivering a robust front-end solution that meets the immediate needs of indie game developers seeking to establish a compelling online presence.",
+        photoTwo: "assets/clashultra2.png",
+        photoThree: "",
+        year: "2024",
+        link: "https://clashultra.vercel.app/",
+        description: "I'm proud of how this project turned out, not only for its technical execution but also for the positive feedback received from the client. It reinforces my commitment to combining creativity with technical expertise to deliver solutions that resonate with target audiences effectively",
+        github: "#"
     },
 ];
