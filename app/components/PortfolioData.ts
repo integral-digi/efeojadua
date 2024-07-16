@@ -189,7 +189,7 @@ export const projectData: ProjectDataProps[] = [
         photoThree: "",
         year: "2024",
         link: "https://tractpay.vercel.app/",
-        outro: "I'm proud of how this project turned out, not only for its technical execution but also for the positive feedback received from the client. It reinforces my commitment to combining creativity with technical expertise to deliver solutions that resonate with target audiences effectively",
+        outro: "I'm proud of how this project turned out, not only for its technical execution but also for the positive feedback received from the client, we are already in talks for designing and developing all necessary front pages needed for the platform. It reinforces my commitment to combining creativity with technical expertise to deliver solutions that resonate with target audiences effectively",
         github: "Private Repo"
     },
 ];
