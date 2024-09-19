@@ -197,7 +197,7 @@ export const projectData: ProjectDataProps[] = [
         name: "Research AI",
         tags: ["design", "frontend"],
         photo: "/assets/Research-AI.png",
-        logo: "/assets/research-logo.svg",
+        logo: "/assets/r-ai-logo.svg",
         intro: "For my latest project, I developed a comprehensive platform for Research AI, aiming to create an interactive and scalable frontend experience. The project combines modern technologies with a focus on user interface design and performance.",
         midsection: "The system is built using Next.js for server-side rendering and routing, while Tailwind CSS ensures a fully responsive and customizable UI. It is designed to handle complex user interactions and integrates seamlessly with other components like custom modals, infinite canvases, and PDF viewers.",
         description: "Research AI's frontend design incorporates features like real-time updates, smooth rendering of PDFs, custom navigation systems, and modular design components. The platform leverages drag-and-drop functionality, ensuring a user-friendly experience. The dark mode option, alongside custom Gantt timelines and tab navigation systems, elevates its usability.",
@@ -205,7 +205,7 @@ export const projectData: ProjectDataProps[] = [
         photoThree: "",
         year: "2024",
         link: "https://research-ai-nine.vercel.app/",
-        outro: "I'm proud of how the Research AI project turned out, showcasing technical depth and attention to user needs. We are already planning for further iterations, making this platform a dynamic tool for the research community. It's been an exciting journey, from design to implementation, proving once again the importance of creativity in the technical landscape.",
+        outro: "This project again was an avenue for showcasing my technical depth and attention to user needs. We are already planning for further iterations, making this platform a dynamic tool for the research community. It's been an exciting journey, from design to implementation, proving once again the importance of creativity in the technical landscape.",
         github: "Private Repo"
     }    
 ];
