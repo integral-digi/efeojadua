@@ -13,7 +13,7 @@ import { hamburgerIcon } from "./components/Menu";
 
 const Home = () => {
     return (
-        <main className="px-36 bg-gray-950 lg:px-8">
+        <main className="px-36 bg-gray-950 lg:px-8 overflow-hidden">
             <section className="space-y-60 py-16 lg:space-y-32" >
                 <section className="space-y-36">
                     <MainNav icon={hamburgerIcon} />

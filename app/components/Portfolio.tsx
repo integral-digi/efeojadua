@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const pageInfo = {
     title: "Portfolio",
-    subtitle: "Some of my recent projects",
+    subtitle: "Selected projects",
     moreLink: "See all"
 };
 
