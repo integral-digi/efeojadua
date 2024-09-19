@@ -204,7 +204,7 @@ export const projectData: ProjectDataProps[] = [
         photoTwo: "/assets/research-ai-2.png",
         photoThree: "",
         year: "2024",
-        link: "https://research-ai-platform.vercel.app/",
+        link: "https://research-ai-nine.vercel.app/",
         outro: "I'm proud of how the Research AI project turned out, showcasing technical depth and attention to user needs. We are already planning for further iterations, making this platform a dynamic tool for the research community. It's been an exciting journey, from design to implementation, proving once again the importance of creativity in the technical landscape.",
         github: "Private Repo"
     }    
