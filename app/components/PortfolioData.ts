@@ -207,7 +207,7 @@ export const projectData: ProjectDataProps[] = [
         link: "https://ricochet-app.vercel.app/",
         outro: "Working on this project was an interesting experience for me, it was a chance to heavily contribute to an idea that has the potential to grow into a Unicorn. Special thanks goes to Josiah for trusting me with this one.",
         github: "Private Repo"
-    } 
+    },
     {
         id: 12,
         name: "Research AI",
