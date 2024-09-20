@@ -194,6 +194,22 @@ export const projectData: ProjectDataProps[] = [
     },
     {
         id: 11,
+        name: "Ricochet",
+        tags: ["design", "frontend"],
+        photo: "/assets/ricochet-mjr.png",
+        logo: "/assets/ric-logo.svg",
+        intro: "Ricochet is basically Vercel for R Developers and projects.",
+        midsection: "This project features a well-researched and custom-built user interface built with Next JS, and Tailwind CSS with an emphasis on device responsiveness.",
+        description: "Ricochet has an interactive interface, with event tables, advanced grid rows, code boxes, and everything a developer needs to managed their deployed projects.",
+        photoTwo: "/assets/ricochet.png",
+        photoThree: "",
+        year: "2024",
+        link: "https://ricochet-app.vercel.app/",
+        outro: "Working on this project was an interesting experience for me, it was a chance to heavily contribute to an idea that has the potential to grow into a Unicorn. Special thanks goes to Josiah for trusting me with this one.",
+        github: "Private Repo"
+    } 
+    {
+        id: 12,
         name: "Research AI",
         tags: ["design", "frontend"],
         photo: "/assets/Research-AI.png",
@@ -207,5 +223,5 @@ export const projectData: ProjectDataProps[] = [
         link: "https://research-ai-nine.vercel.app/",
         outro: "This project again was an avenue for showcasing my technical depth and attention to user needs. We are already planning for further iterations, making this platform a dynamic tool for the research community. It's been an exciting journey, from design to implementation, proving once again the importance of creativity in the technical landscape.",
         github: "Private Repo"
-    }    
+    },  
 ];
